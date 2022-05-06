@@ -11,5 +11,9 @@ userRouter.post('/', userController.createUser);
 
 userRouter.get('/:userIndex', userController.getUserById);
 
+userRouter.delete('/:userIndex', userController.deleteUser);
+
+userRouter.put('/:userIndex', userController.updateUser);
+
 
 module.exports = userRouter;

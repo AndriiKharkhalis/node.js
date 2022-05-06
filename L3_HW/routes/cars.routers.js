@@ -8,4 +8,8 @@ carsRouter.get('/', carController.getAllCars);
 
 carsRouter.get('/:carsIndex', carController.getCarById);
 
+carsRouter.delete('/:carIndex', carController.deleteCar);
+
+carsRouter.put('/:carIndex', carController.updateCar);
+
 module.exports = carsRouter;
